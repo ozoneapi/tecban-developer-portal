@@ -15,7 +15,9 @@ Welcome to the TecBan Open Banking API Developer Portal.
 
 ## Open Banking
 
-The TecBan Open Banking API is based on the Open Banking Standard which allows regulated Third Party Providers (TPPs) to access Account Information Services (AIS), Payment Initiation Services (PIS) and funds confirmation requests for member accounts.  Access to these services on behalf of members is controlled by strong customer authentication within TecBan apps as part of OpenID Connect authorisation flows. __?? We currently support app->app, mobile-web->app, web->web authentication flows__.
+The TecBan Open Banking API is based on the Open Banking Standard which allows regulated Third Party Providers (TPPs) to access Account Information Services (AIS), Payment Initiation Services (PIS) and funds confirmation requests for member accounts.  Access to these services on behalf of members is controlled by strong customer authentication within TecBan apps as part of OpenID Connect authorisation flows. 
+
+__Correct? We currently support app->app, mobile-web->app, web->web authentication flows__.
 
 TecBan is an FCA registered Account Servicing Payment Service Provider (ASPSP) who provides access to these services via the Open Banking standard.  You can find out more about Open Banking here: [What is Open Banking](https://www.openbanking.org.uk/customers/what-is-open-banking/).  
 
@@ -74,16 +76,14 @@ Our API Sandbox contains a full simulation of our APIs but without connecting to
 
 Below are the paths of our well-known endpoints for the Sandbox environments.
 
-__Check URLS__
-
   - Authorisation Server 1: Provides both strict and permissive client profiles in headless and non headless options.
-    - OIDC Well Known endpoint: https://ob-issuer1.tecban-sandbox.o3bank.co.uk/.well-known/openid-configuration
-    - `baseUrl`: https://ob-api1.tecban-sandbox.o3bank.co.uk:4501/v1.0
-    - [Security Profiles](specification/images/sandbox-auth-server-1-profiles.png)
+    - OIDC Well Known endpoint: https://ob-issuer1.tecban-sandbox.o3bank.co.uk/.well-known/openid-configuration 
+    - `baseUrl`: https://ob-api1.tecban-sandbox.o3bank.co.uk:4501/v1.0 
+    - [Security Profiles](specification/images/sandbox-auth-server-1-profiles.png) 
   - Authorisation Server 2: Provides a more permissive security profile is used to help TPP onboarding and learning
-    - OIDC Well Known endpoint: https://ob-issuer2.tecban-sandbox.o3bank.co.uk/.well-known/openid-configuration
-    - `baseUrl`: https://ob-api2.tecban-sandbox.o3bank.co.uk:4502/v1.0
-    - [Security Profiles](specification/images/sandbox-auth-server-2-profiles.png)
+    - OIDC Well Known endpoint: https://ob-issuer2.tecban-sandbox.o3bank.co.uk/.well-known/openid-configuration 
+    - `baseUrl`: https://ob-api2.tecban-sandbox.o3bank.co.uk:4502/v1.0 
+    - [Security Profiles](specification/images/sandbox-auth-server-2-profiles.png) 
 
 ### Sandbox Testing Info
 
