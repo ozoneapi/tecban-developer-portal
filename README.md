@@ -10,6 +10,7 @@ Welcome to the TecBan Open Banking API Developer Portal.
   - [API Helpers](#markdown-header-api-helpers)
   - [Sandbox API](#markdown-header-sandbox-api)
   - [Production API](#markdown-header-production-api)
+  - [Usage Guide](#markdown-header-usage-guide)
   - [Support](#markdown-header-support)
   - [Changelog](#markdown-header-changelog)
 
@@ -83,9 +84,13 @@ Below are the paths of our well-known endpoints for the Sandbox environments.
     - `baseUrl`: https://ob-api2.tecban-sandbox.o3bank.co.uk:4502/v1.0
     - [Security Profiles](specification/images/sandbox-auth-server-2-profiles.png)
 
-### Sandbox Testing Info
+### Sandbox Clients
 
-#### Sandbox User Accounts
+TPPs can use test clients created for Bank 1 and Bank 2.
+
+- [Test Clients](./test%20clients/README.md)
+
+### Sandbox User Accounts
 
 | user   | password |
 | -------|----------|
@@ -104,6 +109,12 @@ Below are the paths of our well-known endpoints for the production environment.
     - `baseUrl`: https://rs1.tecban-sandbox.o3bank.co.uk:4501/v1.0
     - Security profile is as defined above
 
+## Usage Guide
+
+The link below has the setup guide to enable TPPs to validate their setup and assist in understanding the various security flows required to integrate their own applications within the Open Banking ecosystem.
+
+- [How to Guide](./usage%20guide/README.md)
+
 ## Support
 
 If you have any questions or issues, please raise an issue via the following channel: openbanking.support@tecban.com.br
@@ -118,3 +129,4 @@ If you have any questions or issues, please raise an issue via the following cha
 | v1.0.4      | 2019-12-17 | AIS: Standing Orders, Scheduled Payments, Direct Debits.  CBPII |
 | v1.0.5      | 2020-01-14 | Updated supported certificates                                  |
 | v1.0.6      | 2020-03-13 | Added PISP, AIS: statements and parties                         |
+| v1.0.7      | 2020-04-03 | Added Test Clients                         |
