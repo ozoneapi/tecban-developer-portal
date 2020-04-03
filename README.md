@@ -19,7 +19,7 @@ The TecBan Open Banking API is based on the Open Banking Standard which allows r
 
 __Correct? We currently support app->app, mobile-web->app, web->web authentication flows__.
 
-TecBan is an FCA registered Account Servicing Payment Service Provider (ASPSP) who provides access to these services via the Open Banking standard.  You can find out more about Open Banking here: [What is Open Banking](https://www.openbanking.org.uk/customers/what-is-open-banking/).  
+TecBan is an FCA registered Account Servicing Payment Service Provider (ASPSP) who provides access to these services via the Open Banking standard.  You can find out more about Open Banking here: [What is Open Banking](https://www.openbanking.org.uk/customers/what-is-open-banking/).
 
 
 ## API Docs
@@ -102,13 +102,13 @@ Our Production API can be accessed by any authorised TPP who has enrolled on the
 Below are the paths of our well-known endpoints for the production environment.
 
   - Authorisation Server: Our production authorisation server uses the strict profile defined above and testable in the Sandbox.
-    - OIDC Well Known endpoint: https://issuer1.tecban-sandbox.o3bank.co.uk/.well-known/openid-configuration
-    - `baseUrl`: https://rs1.tecban-sandbox.o3bank.co.uk:4501/v1.0
+    - OIDC Well Known endpoint: https://issuer1.tecban-sandbox.o3bank.co.uk/.well-known/openid-configuration 
+    - `baseUrl`: https://rs1.tecban-sandbox.o3bank.co.uk:4501/v1.0 
     - Security profile is as defined above
 
 ## Support
 
-If you have any questions or issues, please raise an issue via the following channel: openbanking.support@tecban.com.br
+If you have any questions or issues, please raise an issue via the following channel: openbanking.support@tecban.com.br 
 
 ## Changelog
 | Version/Tag | Date       | Changes                                                         |
