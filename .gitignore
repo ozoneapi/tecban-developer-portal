@@ -1,0 +1,10 @@
+/nbproject/
+**/node_modules/
+*.log
+*.tgz
+*.zip
+package-lock.json
+**/experiments/trusona-server-sdk-js/*
+.DS_Store
+**/o3-sync/eidas/dnload/obie-prod
+**/o3-sync/eidas/dnload/obie-sandbox

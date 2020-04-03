@@ -5,8 +5,8 @@
     "description": "OpenAPI for Account and Transaction API Specification",
     "termsOfService": "https://www.openbanking.org.uk/terms",
     "contact": {
-      "name": "Tide Open Banking Service Desk",
-      "email": "openbanking.support@tide.co"
+      "name": "TecBan Open Banking Service Desk",
+      "email": "openbanking.support@tecban.com.br"
     },
     "license": {
       "name": "open-licence",

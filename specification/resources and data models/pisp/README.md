@@ -13,9 +13,9 @@ Resources accessed using the pisp PSD2 role are detailed here:
 
 **[Domestic Payment Consents API](domestic-payment-consents.md)**
 
-  - There is no MAX ‘InstructedAmount/Amount' mandated by Tide API. 50,000 GBP is the default maximum when opening a
- Tide account, but thresholds can be managed by the customer. Tide suggest PISP notify the PSU that the same limits
-  apply as in their Tide app. It is possible from time to time that `domestic-payment-consents` is authorised but
+  - There is no MAX ‘InstructedAmount/Amount' mandated by TecBan API. 50,000 GBP is the default maximum when opening a
+ TecBan account, but thresholds can be managed by the customer. TecBan suggest PISP notify the PSU that the same limits
+  apply as in their TecBan app. It is possible from time to time that `domestic-payment-consents` is authorised but
    payment initiation fails due to account limits.
   - InstructedAmount/Currency must be GBP
   - RemittanceInformation/Reference is mandatory field and must adhere to the following:
@@ -34,14 +34,14 @@ Resources accessed using the pisp PSD2 role are detailed here:
   the front end, the consent will remain in status `awaiting authorisation` and the PSU will not be redirected.
   -  The PISP can approach this in one of two ways: 
       - Notify PSU that only payments to existing recipients 
-   are permitted and in the event this condition is not met Tide will not authorise the consent and 
+   are permitted and in the event this condition is not met TecBan will not authorise the consent and 
    display error modal to user  
-      - Integrate with Tide beneficiaries API and can confirm that the recipient
+      - Integrate with TecBan beneficiaries API and can confirm that the recipient
     already exists before sending the consent to allow for a better user experience
   -  Only local instrument
      supported is faster payment scheme UK.OBIE.FPS, if anything other than this is sent by PISP in consent
       payload then an error will be returned. However, this field is not mandatory so we suggest PISP simply 
-      not include this field and Tide will stage consent as a faster payment.
+      not include this field and TecBan will stage consent as a faster payment.
   -  Only support Account/SchemeName UK.OBIE.SortCodeAccountNumber for both `DebtorAccount` and `CreditorAccount`, any other enum provided will return error.
   -  Payments can be made on all days including Saturdays, Sundays and Bank Holidays
 
@@ -54,9 +54,9 @@ Resources accessed using the pisp PSD2 role are detailed here:
 
 **[Domestic Scheduled Payment Consents API](domestic-scheduled-payment-consents.md)**
 
-  -  There is no MAX ‘InstructedAmount/Amount' mandated by Tide API. 50,000 GBP is the default maximum when opening a
- Tide account, but thresholds can be managed by the customer. Tide suggest PISP notify the PSU that the same limits
-  apply as in their Tide app. It is possible from time to time that `domestic-payment-consents` is authorised but
+  -  There is no MAX ‘InstructedAmount/Amount' mandated by TecBan API. 50,000 GBP is the default maximum when opening a
+ TecBan account, but thresholds can be managed by the customer. TecBan suggest PISP notify the PSU that the same limits
+  apply as in their TecBan app. It is possible from time to time that `domestic-payment-consents` is authorised but
    payment initiation fails due to account limits.
   -  InstructedAmount/Currency must be GBP
   -  RemittanceInformation/Reference is mandatory field and must adhere to the following:
@@ -76,14 +76,14 @@ Resources accessed using the pisp PSD2 role are detailed here:
   the front end, the consent will remain in status `awaiting authorisation` and the PSU will not be redirected.
   - The PISP can approach this in one of two ways: 
       - Notify PSU that only payments to existing recipients 
-   are permitted and in the event this condition is not met Tide will not authorise the consent and 
+   are permitted and in the event this condition is not met TecBan will not authorise the consent and 
    display error modal to user  
-      - Integrate with Tide beneficiaries API and can confirm that the recipient
+      - Integrate with TecBan beneficiaries API and can confirm that the recipient
     already exists before sending the consent to allow for a better user experience
    -  Only local instrument
      supported is faster payment scheme UK.OBIE.FPS, if anything other than this is sent by PISP in consent
       payload then an error will be returned. However, this field is not mandatory so we suggest PISP simply 
-      not include this field and Tide will stage consent as a faster payment. TODO 
+      not include this field and TecBan will stage consent as a faster payment. TODO 
    -  Only support Account/SchemeName UK.OBIE.SortCodeAccountNumber for both `DebtorAccount` and `CreditorAccount`, any other enum provided will return error.
    -  `RequestedExecutionDateTime` must be no more than 1 calendar year in advance, falling short of this PISP will be returned an error
    -  Payments can be made on all days including Saturdays, Sundays and Bank Holidays
@@ -97,9 +97,9 @@ Resources accessed using the pisp PSD2 role are detailed here:
 
 **[Domestic Standing Order Consents API](domestic-standing-order-consents.md)**
 
-  -  There is no MAX ‘FirstPaymentAmount/Amount' mandated by Tide API. 50,000 GBP is the 
-default maximum when opening a Tide account, but thresholds can be managed by the 
-customer. Tide suggest PISP notify the PSU that the same limits apply as in their Tide app. It 
+  -  There is no MAX ‘FirstPaymentAmount/Amount' mandated by TecBan API. 50,000 GBP is the 
+default maximum when opening a TecBan account, but thresholds can be managed by the 
+customer. TecBan suggest PISP notify the PSU that the same limits apply as in their TecBan app. It 
 is possible from time to time that `domestic-payment-consents` is authorised but payment 
 initiation fails due to account limits.
   -  FirstPaymentAmount/Currency must be GBP
@@ -120,15 +120,15 @@ does not meet this criteria then error will be returned to the front end, the co
 `awaiting authorisation` and the PSU will not be redirected. 
   - The PISP can approach this in one of two ways: 
       - Notify PSU that only payments to exisitng recipients are permitted and in the event this condition
-     is not met Tide will not authorise the consent and display error modal to user 
-      - Integrate with Tide beneficiaries API and can confirm that the recipient already exists before 
+     is not met TecBan will not authorise the consent and display error modal to user 
+      - Integrate with TecBan beneficiaries API and can confirm that the recipient already exists before 
     sending the consent to allow for a better user experience
    -  Only support SchemeName UK.OBIE.SortCodeAccountNumber for both `DebtorAccount` and `CreditorAccount`, 
   any other enum provided will return error.
    - ` Initiation/FirstPaymentDateTime` must be no more than 1 calendar year in advance, or  PISP will be returned an error
    - `Initiation/FinalPaymentDateTime` must be after ` Initiation/FirstPaymentDateTime` by at least a calendar day,
    or PISP will be returned error
-   - ‘Initiation/Frequency’ supported by Tide are IntrvlMnthDay:01:xx andIntrvlWkDay:01:xx, 
+   - ‘Initiation/Frequency’ supported by TecBan are IntrvlMnthDay:01:xx andIntrvlWkDay:01:xx, 
   the following rules apply:
       - IntrvlMnthDay:01:xx Same day every month (i.e. if made on 4th May 
   the next payment will be made on the 4th June), however if a payment is made on either the 29th, 
@@ -137,18 +137,18 @@ does not meet this criteria then error will be returned to the front end, the co
   next payment 28th Feb > next payment 30th March. 
           - first two digits after IntrvlMnthDay must be set at '01', indicating a one monthly interval else PISP
    will be returned error 
-          - last two digits after IntrvlMnthDay are not considered or validated by Tide
+          - last two digits after IntrvlMnthDay are not considered or validated by TecBan
     (payment will be made as per the day in FirstPaymentDateTime)
        - IntrvlWkDay:01:xx Same day of the week as the first payment 
    (i.e. if first payment is made on Friday > next payment is made on Friday the following week) -
     this is number of the week i.e. 1 = monday 
           - first two digits after IntrvlMnthWkDay must be set at '01'
-          - last two digits after IntrvlMnthWkDay are not taken in to account by Tide 
+          - last two digits after IntrvlMnthWkDay are not taken in to account by TecBan 
     (payment willbe made as per the day in FirstPaymentDateTime)
-   -  NumberOfPayments not supported by Tide (will return error if provided)
-   -  RecurringPaymentDateTime not supported by Tide (will return error if provided)
-   -  RecurringPaymentAmount not supported by Tide (will return error if provided)
-   -  FinalPaymentAmount not supported by Tide (will return error if provided)
+   -  NumberOfPayments not supported by TecBan (will return error if provided)
+   -  RecurringPaymentDateTime not supported by TecBan (will return error if provided)
+   -  RecurringPaymentAmount not supported by TecBan (will return error if provided)
+   -  FinalPaymentAmount not supported by TecBan (will return error if provided)
 
 ### Domestic Standing Orders
 

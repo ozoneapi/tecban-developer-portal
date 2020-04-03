@@ -1,6 +1,6 @@
-# Tide Open Banking API
+# TecBan Open Banking API
 
-Welcome to the Tide Open Banking API Developer Portal.
+Welcome to the TecBan Open Banking API Developer Portal.
 
 
 ## Table of Contents
@@ -15,9 +15,9 @@ Welcome to the Tide Open Banking API Developer Portal.
 
 ## Open Banking
 
-The Tide Open Banking API is based on the Open Banking Standard which allows regulated Third Party Providers (TPPs) to access Account Information Services (AIS), Payment Initiation Services (PIS) and funds confirmation requests for member accounts.  Access to these services on behalf of members is controlled by strong customer authentication within Tide apps as part of OpenID Connect authorisation flows.  We currently support app->app, mobile-web->app, web->web authentication flows.
+The TecBan Open Banking API is based on the Open Banking Standard which allows regulated Third Party Providers (TPPs) to access Account Information Services (AIS), Payment Initiation Services (PIS) and funds confirmation requests for member accounts.  Access to these services on behalf of members is controlled by strong customer authentication within TecBan apps as part of OpenID Connect authorisation flows.  We currently support app->app, mobile-web->app, web->web authentication flows.
 
-Tide is an FCA registered Account Servicing Payment Service Provider (ASPSP) who provides access to these services via the Open Banking standard.  You can find out more about Open Banking here: [What is Open Banking](https://www.openbanking.org.uk/customers/what-is-open-banking/).  
+TecBan is an FCA registered Account Servicing Payment Service Provider (ASPSP) who provides access to these services via the Open Banking standard.  You can find out more about Open Banking here: [What is Open Banking](https://www.openbanking.org.uk/customers/what-is-open-banking/).  
 
 
 ## API Docs
@@ -28,25 +28,14 @@ Please see the following specifications we have aligned with:
     - Use this specification to register your TPP client to use our APIs
   - [Open ID Foundation's Financial Grade API (FAPI) Profile](https://openid.net/specs/openid-financial-api-part-2-wd-06.html)
     - This specification enables user authentication of consents for open banking
-  - [Tide Open Banking API Specification](./specification/README.md) - based on Open Banking Read/Write API Specification v3.1.2
+  - [TecBan Open Banking API Specification](./specification/README.md) - based on Open Banking Read/Write API Specification v3.1.2
     - This specification describes the resources that are available on our service
     - [Account Information Services API](./specification/resources%20and%20data%20models/aisp/README.md)
-        -  https://rs1.openbanking.api.tide.co:4501/v1.0/open-banking/v3.1/aisp/**
+        -  https://rs1.tecban-sandbox.o3bank.co.uk:4501/v1.0/open-banking/v3.1/aisp/**
     - [Confirmation of Funds API](./specification/resources%20and%20data%20models/cbpii/README.md)
-        -  https://rs1.openbanking.api.tide.co:4501/v1.0/open-banking/v3.1/cbpii/**
+        -  https://rs1.tecban-sandbox.o3bank.co.uk:4501/v1.0/open-banking/v3.1/cbpii/**
     - [Payment initiation services API](./specification/resources%20and%20data%20models/pisp/README.md)
-        -  https://rs1.openbanking.api.tide.co:4501/v1.0/open-banking/v3.1/pisp/**
-
-
-
-> N.B. For those third party providers wishing to screen scrape, or continue screen scraping against 
-> Tide's web channels please connect to mci.openbanking.tide.co
->
-> Tide's international currency account information and international payments 
-> APIs are available via this modified customer interface.
-> 
-> If you require test accounts please contact help@tide.co
-
+        -  https://rs1.tecban-sandbox.o3bank.co.uk:4501/v1.0/open-banking/v3.1/pisp/**s
 
 ## API Helpers
 
@@ -59,7 +48,7 @@ Our API allows dynamic client registration in order to create a valid client tha
 
 ### Production security profile
 
-As defined further in the [Tide Open Banking API Specification](./specification/README.md) 
+As defined further in the [TecBan Open Banking API Specification](./specification/README.md) 
 
   - ID Token Signing Algorithm: `PS256`
   - Response Types: `code`, `id_token`
@@ -67,7 +56,7 @@ As defined further in the [Tide Open Banking API Specification](./specification/
   - Token Endpoint Auth Singing Algorithms: `PS256`
   - Token Endpoint Auth Methods: `private_key_jwt`, `tls_client_auth`
   - For `private_key_jwt` - the `aud` claim is the url of the token endpoint as specified in [OIDC client authentication](https://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication)
-  - The `request` object used in [OIDC flows](https://openid.net/specs/openid-connect-core-1_0.html#RequestObject) the `aud` claim is the issuer url from the Tide ASPSP .wellknown endpoint (linked below).
+  - The `request` object used in [OIDC flows](https://openid.net/specs/openid-connect-core-1_0.html#RequestObject) the `aud` claim is the issuer url from the TecBan ASPSP .wellknown endpoint (linked below).
 
   > **Note**: Our Sandbox API also offers less strict profiles to assist with integraiton testing.  See below for more details.
 
@@ -86,12 +75,12 @@ Our API Sandbox contains a full simulation of our APIs but without connecting to
 Below are the paths of our well-known endpoints for the Sandbox environments.
 
   - Authorisation Server 1: Provides both strict and permissive client profiles in headless and non headless options.
-    - OIDC Well Known endpoint: https://ob-issuer1.sandbox.tide.co/.well-known/openid-configuration
-    - `baseUrl`: https://ob-api1.sandbox.tide.co:4501/v1.0
+    - OIDC Well Known endpoint: https://ob-issuer1.tecban-sandbox.o3bank.co.uk/.well-known/openid-configuration
+    - `baseUrl`: https://ob-api1.tecban-sandbox.o3bank.co.uk:4501/v1.0
     - [Security Profiles](specification/images/sandbox-auth-server-1-profiles.png)
   - Authorisation Server 2: Provides a more permissive security profile is used to help TPP onboarding and learning
-    - OIDC Well Known endpoint: https://ob-issuer2.sandbox.tide.co/.well-known/openid-configuration
-    - `baseUrl`: https://ob-api2.sandbox.tide.co:4502/v1.0
+    - OIDC Well Known endpoint: https://ob-issuer2.tecban-sandbox.o3bank.co.uk/.well-known/openid-configuration
+    - `baseUrl`: https://ob-api2.tecban-sandbox.o3bank.co.uk:4502/v1.0
     - [Security Profiles](specification/images/sandbox-auth-server-2-profiles.png)
 
 ### Sandbox Testing Info
@@ -111,13 +100,13 @@ Our Production API can be accessed by any authorised TPP who has enrolled on the
 Below are the paths of our well-known endpoints for the production environment.
 
   - Authorisation Server: Our production authorisation server uses the strict profile defined above and testable in the Sandbox.
-    - OIDC Well Known endpoint: https://issuer1.openbanking.api.tide.co/.well-known/openid-configuration
-    - `baseUrl`: https://rs1.openbanking.api.tide.co:4501/v1.0
+    - OIDC Well Known endpoint: https://issuer1.tecban-sandbox.o3bank.co.uk/.well-known/openid-configuration
+    - `baseUrl`: https://rs1.tecban-sandbox.o3bank.co.uk:4501/v1.0
     - Security profile is as defined above
 
 ## Support
 
-If you have any questions or issues, please raise an issue via the following channel: openbanking.support@tide.co
+If you have any questions or issues, please raise an issue via the following channel: openbanking.support@tecban.com.br
 
 ## Changelog
 | Version/Tag | Date       | Changes                                                         |

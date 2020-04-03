@@ -1,4 +1,4 @@
-# Tide Open Banking Read-Write API
+# TecBan Open Banking Read-Write API
 
 __Note__: These docs are based on [v3.1.2 of the Open Banking Specification ](https://github.com/OpenBankingUK/read-write-api-docs-pub/tree/v3.1.2)
 

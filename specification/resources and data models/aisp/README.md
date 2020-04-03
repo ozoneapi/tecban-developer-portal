@@ -20,7 +20,7 @@ Resources accessed using the aisp PSD2 role are detailed below.
 
 ## Resource Details
 
-Below we have captured the Tide specific details of the standard API endpoints.
+Below we have captured the TecBan specific details of the standard API endpoints.
 
 ### Account Access Consents
 
@@ -30,7 +30,7 @@ Below we have captured the Tide specific details of the standard API endpoints.
 
 **[Accounts API](Accounts.md)**
 
-Tide members will have one of the following accounts:
+TecBan members will have one of the following accounts:
 
  *  E-money Business Wallet
  *  Business Current Account
@@ -39,7 +39,7 @@ Tide members will have one of the following accounts:
 
 **[Balances API](Balances.md)**
 
-Balances shown in this endpoint include `Expected`, `InterimAvailable` and `InterimCleared`, however `Expected` balance is the value displayed most widely to our members within the Tide apps.
+Balances shown in this endpoint include `Expected`, `InterimAvailable` and `InterimCleared`, however `Expected` balance is the value displayed most widely to our members within the TecBan apps.
 
 ### Transactions
 
@@ -55,7 +55,7 @@ Payment recipients are accessible via the Beneficiaries API.  Payments are curre
 
 **[Products API](Products.md)**
 
-Tide currently offers Business Current Accounts and Business E-Money Accounts.
+TecBan currently offers Business Current Accounts and Business E-Money Accounts.
 
 ### Direct Debits
 
@@ -87,7 +87,7 @@ DateTime elements have been used so that there is consistency across all API end
 
 The API endpoints for these resources are given below.
 
-They can be accessed from the following baseUrl: `https://rs1.openbanking.api.tide.co:4501/v1.0/open-banking/v3.1/aisp/**`
+They can be accessed from the following baseUrl: `https://rs1.tecban-sandbox.o3bank.co.uk:4501/v1.0/open-banking/v3.1/aisp/**`
 
 | Resource |Endpoints |
 | --- |--- |
