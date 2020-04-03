@@ -15,7 +15,7 @@ Welcome to the TecBan Open Banking API Developer Portal.
 
 ## Open Banking
 
-The TecBan Open Banking API is based on the Open Banking Standard which allows regulated Third Party Providers (TPPs) to access Account Information Services (AIS), Payment Initiation Services (PIS) and funds confirmation requests for member accounts.  Access to these services on behalf of members is controlled by strong customer authentication within TecBan apps as part of OpenID Connect authorisation flows.  We currently support app->app, mobile-web->app, web->web authentication flows.
+The TecBan Open Banking API is based on the Open Banking Standard which allows regulated Third Party Providers (TPPs) to access Account Information Services (AIS), Payment Initiation Services (PIS) and funds confirmation requests for member accounts.  Access to these services on behalf of members is controlled by strong customer authentication within TecBan apps as part of OpenID Connect authorisation flows. __?? We currently support app->app, mobile-web->app, web->web authentication flows__.
 
 TecBan is an FCA registered Account Servicing Payment Service Provider (ASPSP) who provides access to these services via the Open Banking standard.  You can find out more about Open Banking here: [What is Open Banking](https://www.openbanking.org.uk/customers/what-is-open-banking/).  
 
@@ -73,6 +73,8 @@ Our API Sandbox contains a full simulation of our APIs but without connecting to
 ### Try our API in the Sandbox
 
 Below are the paths of our well-known endpoints for the Sandbox environments.
+
+__Check URLS__
 
   - Authorisation Server 1: Provides both strict and permissive client profiles in headless and non headless options.
     - OIDC Well Known endpoint: https://ob-issuer1.tecban-sandbox.o3bank.co.uk/.well-known/openid-configuration
