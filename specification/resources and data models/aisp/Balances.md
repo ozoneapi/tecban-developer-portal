@@ -120,7 +120,7 @@ Content-Type: application/json
         "AccountId": "22289",
         "Amount": {
           "Amount": "1230.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditDebitIndicator": "Credit",
         "Type": "InterimAvailable",
@@ -130,7 +130,7 @@ Content-Type: application/json
             "Included": true,
             "Amount": {
               "Amount": "1000.00",
-              "Currency": "GBP"
+              "Currency": "R$"
             },
             "Type": "Pre-Agreed"
           }
@@ -176,7 +176,7 @@ Content-Type: application/json
         "AccountId": "22289",
         "Amount": {
           "Amount": "1230.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditDebitIndicator": "Credit",
         "Type": "InterimAvailable",
@@ -186,7 +186,7 @@ Content-Type: application/json
             "Included": true,
             "Amount": {
               "Amount": "1000.00",
-              "Currency": "GBP"
+              "Currency": "R$"
             },
             "Type": "Pre-Agreed"
           }
@@ -196,7 +196,7 @@ Content-Type: application/json
         "AccountId": "31820",
         "Amount": {
           "Amount": "57.36",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditDebitIndicator": "Debit",
         "Type": "InterimBooked",

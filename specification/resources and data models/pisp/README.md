@@ -13,11 +13,11 @@ Resources accessed using the pisp PSD2 role are detailed here:
 
 **[Domestic Payment Consents API](domestic-payment-consents.md)**
 
-  - There is no MAX ‘InstructedAmount/Amount' mandated by TecBan API. 50,000 GBP is the default maximum when opening a
+  - There is no MAX ‘InstructedAmount/Amount' mandated by TecBan API. 50,000 R$ is the default maximum when opening a
  TecBan account, but thresholds can be managed by the customer. TecBan suggest PISP notify the PSU that the same limits
   apply as in their TecBan app. It is possible from time to time that `domestic-payment-consents` is authorised but
    payment initiation fails due to account limits.  
-  - InstructedAmount/Currency must be GBP   
+  - InstructedAmount/Currency must be R$   
   - RemittanceInformation/Reference is mandatory field and must adhere to the following: 
       - Valid characters - "A-Z", "0-9", "space", "&", "-", ".", "/" 
       - Contiguous characters – user enters 6 or more valid characters but without contiguous string of at least  
@@ -54,11 +54,11 @@ Resources accessed using the pisp PSD2 role are detailed here:
 
 **[Domestic Scheduled Payment Consents API](domestic-scheduled-payment-consents.md)**
 
-  -  There is no MAX ‘InstructedAmount/Amount' mandated by TecBan API. 50,000 GBP is the default maximum when opening a
+  -  There is no MAX ‘InstructedAmount/Amount' mandated by TecBan API. 50,000 R$ is the default maximum when opening a
  TecBan account, but thresholds can be managed by the customer. TecBan suggest PISP notify the PSU that the same limits
   apply as in their TecBan app. It is possible from time to time that `domestic-payment-consents` is authorised but
    payment initiation fails due to account limits. 
-  -  InstructedAmount/Currency must be GBP 
+  -  InstructedAmount/Currency must be R$ 
   -  RemittanceInformation/Reference is mandatory field and must adhere to the following: 
       - Valid characters - "A-Z", "0-9", "space", "&", "-", ".", "/" 
       - Contiguous characters – user enters 6 or more valid characters but without contiguous string of at least 
@@ -97,12 +97,12 @@ Resources accessed using the pisp PSD2 role are detailed here:
 
 **[Domestic Standing Order Consents API](domestic-standing-order-consents.md)**
 
-  -  There is no MAX ‘FirstPaymentAmount/Amount' mandated by TecBan API. 50,000 GBP is the 
+  -  There is no MAX ‘FirstPaymentAmount/Amount' mandated by TecBan API. 50,000 R$ is the 
 default maximum when opening a TecBan account, but thresholds can be managed by the 
 customer. TecBan suggest PISP notify the PSU that the same limits apply as in their TecBan app. It 
 is possible from time to time that `domestic-payment-consents` is authorised but payment 
 initiation fails due to account limits. 
-  -  FirstPaymentAmount/Currency must be GBP 
+  -  FirstPaymentAmount/Currency must be R$ 
   -  Initiation/Reference is mandatory field and must adhere to the following rules: 
       - Valid characters - "A-Z", "0-9", "space", "&", "-", ".", "/" 
       - Contiguous characters – user enters 6 or more valid characters but without contiguous string  

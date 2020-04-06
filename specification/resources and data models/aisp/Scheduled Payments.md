@@ -133,7 +133,7 @@ Content-Type: application/json
         "ScheduledType": "Execution",
         "InstructedAmount": {
           "Amount": "10.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditorAccount": {
           "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -184,7 +184,7 @@ Content-Type: application/json
         "ScheduledType": "Execution",
         "InstructedAmount": {
           "Amount": "10.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditorAccount": {
           "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -199,7 +199,7 @@ Content-Type: application/json
         "ScheduledType": "Execution",
         "InstructedAmount": {
           "Amount": "12.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditorAccount": {
           "SchemeName": "UK.OBIE.SortCodeAccountNumber",

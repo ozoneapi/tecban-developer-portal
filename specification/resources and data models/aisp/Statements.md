@@ -251,7 +251,7 @@ Content-Type: application/json
       {
         "Amount": {
           "Amount": "400.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
 		"CreditDebitIndicator": "Credit",        
 		"Type": "ClosingBalance"        
@@ -259,7 +259,7 @@ Content-Type: application/json
       {
         "Amount": {
           "Amount": "600.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditDebitIndicator": "Credit",
         "Type": "PreviousClosingBalance"
@@ -279,7 +279,7 @@ Content-Type: application/json
       {
         "Amount": {
           "Amount": "200.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditDebitIndicator": "Credit",
         "Type": "PreviousClosingBalance"
@@ -287,7 +287,7 @@ Content-Type: application/json
       {
         "Amount": {
           "Amount": "400.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditDebitIndicator": "Credit",
         "Type": "PreviousClosingBalance"
@@ -342,7 +342,7 @@ Content-Type: application/json
       {
         "Amount": {
           "Amount": "400.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
 		"CreditDebitIndicator": "Credit",        
 		"Type": "ClosingBalance"        
@@ -350,7 +350,7 @@ Content-Type: application/json
       {
         "Amount": {
           "Amount": "600.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditDebitIndicator": "Credit",
         "Type": "PreviousClosingBalance"
@@ -370,7 +370,7 @@ Content-Type: application/json
       {
         "Amount": {
           "Amount": "200.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
 		"CreditDebitIndicator": "Credit",        
 		"Type": "ClosingBalance"        
@@ -378,7 +378,7 @@ Content-Type: application/json
       {
         "Amount": {
           "Amount": "400.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditDebitIndicator": "Credit",
         "Type": "PreviousClosingBalance"
@@ -397,7 +397,7 @@ Content-Type: application/json
       {
         "Amount": {
           "Amount": "2700.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
 		"CreditDebitIndicator": "Credit",        
 		"Type": "ClosingBalance"        
@@ -405,7 +405,7 @@ Content-Type: application/json
       {
         "Amount": {
           "Amount": "4060.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditDebitIndicator": "Credit",
         "Type": "PreviousClosingBalance"

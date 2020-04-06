@@ -148,7 +148,7 @@ Accept: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.20",
       "InstructedAmount": {
         "Amount": "165.88",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "CreditorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -205,7 +205,7 @@ Content-Type: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.20",
       "InstructedAmount": {
         "Amount": "165.88",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "CreditorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -307,7 +307,7 @@ Accept: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.20",
       "InstructedAmount": {
         "Amount": "165.88",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "CreditorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -365,7 +365,7 @@ Content-Type: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.20",
       "InstructedAmount": {
         "Amount": "165.88",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "CreditorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -420,7 +420,7 @@ Content-Type: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.20",
       "InstructedAmount": {
         "Amount": "165.88",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "CreditorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -496,7 +496,7 @@ Content-Type: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.20",
       "InstructedAmount": {
         "Amount": "165.88",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "CreditorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -615,7 +615,7 @@ Accept: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.37",
       "InstructedAmount": {
         "Amount": "20.00",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -660,7 +660,7 @@ Content-Type: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.37",
       "InstructedAmount": {
         "Amount": "20.00",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -713,7 +713,7 @@ Accept: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.37",
       "InstructedAmount": {
         "Amount": "20.00",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -759,7 +759,7 @@ Content-Type: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.37",
       "InstructedAmount": {
         "Amount": "20.00",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -818,7 +818,7 @@ Content-Type: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.37",
       "InstructedAmount": {
         "Amount": "20.00",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -881,7 +881,7 @@ Content-Type: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.37",
       "InstructedAmount": {
         "Amount": "20.00",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -933,7 +933,7 @@ Accept: application/json
       "LocalInstrument": "UK.OBIE.BACS",
       "InstructedAmount": {
         "Amount": "20.00",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -980,7 +980,7 @@ Content-Type: application/json
       "LocalInstrument": "UK.OBIE.BACS",
       "InstructedAmount": {
         "Amount": "20.00",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -1035,7 +1035,7 @@ Accept: application/json
       "LocalInstrument": "UK.OBIE.CHAPS",
       "InstructedAmount": {
         "Amount": "20.00",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -1090,7 +1090,7 @@ Content-Type: application/json
          "LocalInstrument":"UK.OBIE.CHAPS",
          "InstructedAmount":{
             "Amount":"20.00",
-            "Currency":"GBP"
+            "Currency":"R$"
          },
          "DebtorAccount":{
             "SchemeName":"UK.OBIE.SortCodeAccountNumber",
@@ -1121,7 +1121,7 @@ Content-Type: application/json
             "Type":"UK.OBIE.ChapsOut",
             "Amount":{
                "Amount":"30.00",
-               "Currency":"GBP"
+               "Currency":"R$"
             }
          }
       ]
@@ -1165,7 +1165,7 @@ Accept: application/json
             "LocalInstrument": "UK.OBIE.BalanceTransfer",
             "InstructedAmount": {
                 "Amount": "3000.00",
-                "Currency": "GBP"
+                "Currency": "R$"
             },
             "DebtorAccount": {
                 "SchemeName": "UK.OBIE.PAN",
@@ -1212,7 +1212,7 @@ Content-Type: application/json
             "LocalInstrument": "UK.OBIE.BalanceTransfer",
             "InstructedAmount": {
                 "Amount": "3000.00",
-                "Currency": "GBP"
+                "Currency": "R$"
             },
             "DebtorAccount": {
                 "SchemeName": "UK.OBIE.PAN",
@@ -1266,7 +1266,7 @@ Accept: application/json
             "LocalInstrument": "UK.OBIE.MoneyTransfer",
             "InstructedAmount": {
                 "Amount": "3000.00",
-                "Currency": "GBP"
+                "Currency": "R$"
             },
             "DebtorAccount": {
                 "SchemeName": "UK.OBIE.PAN",
@@ -1312,7 +1312,7 @@ Content-Type: application/json
             "LocalInstrument": "UK.OBIE.MoneyTransfer",
             "InstructedAmount": {
                 "Amount": "3000.00",
-                "Currency": "GBP"
+                "Currency": "R$"
             },
             "DebtorAccount": {
                 "SchemeName": "UK.OBIE.PAN",

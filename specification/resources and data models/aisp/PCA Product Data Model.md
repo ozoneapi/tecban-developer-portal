@@ -101,7 +101,7 @@ Further analysis required:-
 #### OverdraftFeeCharges
 
 * A cap can be applied to 1 or more Overdraft Fees/Charges and are typically capped for a particular period e.g. Total overdraft charges (Arranged, Unarranged, Paid Transaction, Unpaid Transaction) may be capped on a monthly basis. More than one fee charges can be clubbed to be capped into one cap. Also a fee charge can be clubbed or used in more than one caps?
-* Capping can either be based on an amount (in gbp), an amount (in items) or a rate.
+* Capping can either be based on an amount (in R$), an amount (in items) or a rate.
 * We will need notes to make it clear how any formula used to apply the capping is deduced.
 * FeeCapOccurrence has been added to capture situations where fee/charges are captured dependent on the number of occurrences rather than capped at a particular amount.
 * OverdraftControlIndicator has been added to the OverdraftFeeChargeCap &amp; OverdraftFeeChargeDetail to allow fees &amp; caps to be specified for the overdraft control feature/benefit.

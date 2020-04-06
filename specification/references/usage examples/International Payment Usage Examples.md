@@ -47,7 +47,7 @@ Accept: application/json
    "CurrencyOfTransfer": "USD",
    "InstructedAmount": {
     "Amount": "165.88",
-    "Currency": "GBP"
+    "Currency": "R$"
    },
    "CreditorAccount": {
     "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -60,7 +60,7 @@ Accept: application/json
     "Unstructured": "Internal ops code 5120101"
    },
    "ExchangeRateInformation": {
-    "UnitCurrency": "GBP",
+    "UnitCurrency": "R$",
     "RateType": "Actual"
    }
   }
@@ -95,7 +95,7 @@ Content-Type: application/json
    "CurrencyOfTransfer": "USD",
    "InstructedAmount": {
     "Amount": "165.88",
-    "Currency": "GBP"
+    "Currency": "R$"
    },
    "CreditorAccount": {
     "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -108,12 +108,12 @@ Content-Type: application/json
     "Unstructured": "Internal ops code 5120101"
    },
    "ExchangeRateInformation": {
-    "UnitCurrency": "GBP",
+    "UnitCurrency": "R$",
     "RateType": "Actual"
    }
   },
   "ExchangeRateInformation": {
-   "UnitCurrency": "GBP",
+   "UnitCurrency": "R$",
    "ExchangeRate": 1.1,
    "RateType": "Actual",
    "ExpirationDateTime": "2017-06-05T15:45:13+00:00"
@@ -194,7 +194,7 @@ Accept: application/json
    "CurrencyOfTransfer": "USD",
    "InstructedAmount": {
     "Amount": "165.88",
-    "Currency": "GBP"
+    "Currency": "R$"
    },
    "CreditorAccount": {
     "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -207,7 +207,7 @@ Accept: application/json
     "Unstructured": "Internal ops code 5120101"
    },
    "ExchangeRateInformation": {
-    "UnitCurrency": "GBP",
+    "UnitCurrency": "R$",
     "RateType": "Indicative"
    }
   }
@@ -237,7 +237,7 @@ Content-Type: application/json
 		"StatusUpdateDateTime": "2017-06-05T15:15:13+00:00",
 		"Initiation": {},
 		"ExchangeRateInformation": {
-			"UnitCurrency": "GBP",
+			"UnitCurrency": "R$",
 			"ExchangeRate": 1.10,
 			"RateType": "Indicative"
 		},
@@ -281,7 +281,7 @@ Accept: application/json
    "CurrencyOfTransfer": "USD",
    "InstructedAmount": {
     "Amount": "165.88",
-    "Currency": "GBP"
+    "Currency": "R$"
    },
    "CreditorAccount": {
     "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -294,7 +294,7 @@ Accept: application/json
     "Unstructured": "Internal ops code 5120101"
    },
    "ExchangeRateInformation": {
-    "UnitCurrency": "GBP",
+    "UnitCurrency": "R$",
     "RateType": "Agreed",
     "ExchangeRate": 1.09,
     "ContractIdentification": "/tbill/2018/T102993"
@@ -326,7 +326,7 @@ Content-Type: application/json
 		"StatusUpdateDateTime": "2017-06-05T15:15:13+00:00",
 		"Initiation": {},
 		"ExchangeRateInformation": {
-			"UnitCurrency": "GBP",
+			"UnitCurrency": "R$",
 	 		"RateType": "Agreed",	
 			"ExchangeRate": 1.09,
 			"ContractIdentification": "/tbill/2018/T102993"
@@ -345,7 +345,7 @@ Content-Type: application/json
 
 ## Credit amount specified; ASPSP provides actual (guaranteed) FX rate, for limited time
 
-In this situation, the PSU specifies the amount that must be credited to the payee. The ASPSP will debit the appropriate amount in GBP depending on the exchange rate.
+In this situation, the PSU specifies the amount that must be credited to the payee. The ASPSP will debit the appropriate amount in R$ depending on the exchange rate.
 
 As in the situation where the PSU specifies the amount to be debited the exchange rate could be guaranteed, indicative or pre-booked. CurrencyOfTransfer specified.
 
@@ -385,7 +385,7 @@ Accept: application/json
     "Unstructured": "Internal ops code 5120101"
    },
    "ExchangeRateInformation": {
-    "UnitCurrency": "GBP",
+    "UnitCurrency": "R$",
     "RateType": "Actual"
    }
   }
@@ -420,7 +420,7 @@ Content-Type: application/json
    "CurrencyOfTransfer": "USD",
    "InstructedAmount": {
     "Amount": "165.88",
-    "Currency": "GBP"
+    "Currency": "R$"
    },
    "CreditorAccount": {
     "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -433,7 +433,7 @@ Content-Type: application/json
     "Unstructured": "Internal ops code 5120101"
    },
    "ExchangeRateInformation": {
-    "UnitCurrency": "GBP",
+    "UnitCurrency": "R$",
     "RateType": "Actual"
    }
   }

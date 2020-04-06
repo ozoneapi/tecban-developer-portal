@@ -61,7 +61,7 @@ Accept: application/json
         "Unstructured": "Internal ops code 5120101"
       },
 	  "ExchangeRateInformation": {
-		"UnitCurrency": "GBP",
+		"UnitCurrency": "R$",
 	  	"RateType": "Actual"
 	  }
     }
@@ -112,12 +112,12 @@ Content-Type: application/json
 				"Unstructured": "Internal ops code 5120101"
 			},
 		  	"ExchangeRateInformation": {
-				"UnitCurrency": "GBP",
+				"UnitCurrency": "R$",
 	  			"RateType": "Actual"
 	  		}
 		},
 		"ExchangeRateInformation": {
-			"UnitCurrency": "GBP",
+			"UnitCurrency": "R$",
 			"ExchangeRate": "1.10",
 			"RateType": "Actual",
 			"ExpirationDateTime": "2017-06-05T15:45:13+00:00"
@@ -182,7 +182,7 @@ Accept: application/json
         "Unstructured": "Internal ops code 5120101"
       },
 	  "ExchangeRateInformation": {
-		"UnitCurrency": "GBP",
+		"UnitCurrency": "R$",
 	  	"RateType": "Indicative"
 	  }
     }
@@ -234,7 +234,7 @@ Content-Type: application/json
 				"Unstructured": "Internal ops code 5120101"
 			},
 		  	"ExchangeRateInformation": {
-				"UnitCurrency": "GBP",
+				"UnitCurrency": "R$",
 	  			"RateType": "Indicative"
 	  		}
 		}

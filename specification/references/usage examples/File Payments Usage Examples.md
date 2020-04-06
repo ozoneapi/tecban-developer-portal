@@ -428,7 +428,7 @@ A sample file with 3 Domestic Payments - CHAPS, BACS and one unspecified is prov
 			"LocalInstrument": "UK.OBIE.CHAPS",
 			"InstructedAmount": {
 				"Amount": "21.00",
-				"Currency": "GBP"
+				"Currency": "R$"
 			},
 			"DebtorAccount": {
 				"SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -458,7 +458,7 @@ A sample file with 3 Domestic Payments - CHAPS, BACS and one unspecified is prov
 			"LocalInstrument": "UK.OBIE.BACS",
 			"InstructedAmount": {
 				"Amount": "22.00",
-				"Currency": "GBP"
+				"Currency": "R$"
 			},
 			"DebtorAccount": {
 				"SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -479,7 +479,7 @@ A sample file with 3 Domestic Payments - CHAPS, BACS and one unspecified is prov
 			"EndToEndIdentification": "FRESCO.21302.GFX.03",
 			"InstructedAmount": {
 				"Amount": "23.00",
-				"Currency": "GBP"
+				"Currency": "R$"
 			},
 			"DebtorAccount": {
 				"SchemeName": "UK.OBIE.SortCodeAccountNumber",

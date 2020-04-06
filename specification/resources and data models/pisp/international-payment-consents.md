@@ -141,8 +141,8 @@ For the OBInternational2 Initiation object:
   * Where the "UK.OBIE.IBAN" is specified as the SchemeName in the Account Identification Section (either DebtorAccount or CreditorAccount), the Identification field **must** be populated with the full IBAN.
 * LocalInstrument is the requested payment scheme for execution. This is a free-text field.
 * InstructionPrioirty may be used by the ASPSP to determine the payment scheme for execution.
-* The InstructedAmount object must be populated with the desired Amount and Currency of transfer, regardless of the currency of the DebtorAccount or CreditorAccount. I.e., a PSU may wish to transfer 100EUR from a GBP DebtorAccount (InstructedAmount will be 100EUR), or 100GBP to an EUR CreditorAccount (the InstructedAmount will be 100GBP).
-* The CurrencyOfTransfer is used to specify the currency the funds will be transferred. I.e., a PSU may wish to transfer 100USD from a GBP DebtorAccount to a Rupee INR CreditorAccount in India.
+* The InstructedAmount object must be populated with the desired Amount and Currency of transfer, regardless of the currency of the DebtorAccount or CreditorAccount. I.e., a PSU may wish to transfer 100EUR from a R$ DebtorAccount (InstructedAmount will be 100EUR), or 100R$ to an EUR CreditorAccount (the InstructedAmount will be 100R$).
+* The CurrencyOfTransfer is used to specify the currency the funds will be transferred. I.e., a PSU may wish to transfer 100USD from a R$ DebtorAccount to a Rupee INR CreditorAccount in India.
 * The ChargeBearer field is used by the PISP to indicate the bearer of charges. An ASPSP must reject the request if the requested charge allocation cannot be fulfilled.
 
 The OBInternational2/ExchangeRateInformation object must conform to these behaviours:
@@ -153,7 +153,7 @@ The OBInternational2/ExchangeRateInformation object must conform to these behavi
   * Agreed.
   * Indicative.
 * A PISP must specify ExchangeRate and ContractIdentification when requesting an **Agreed** RateType. If an invalid ContractIdentification and ExchangeRate are requested together, an ASPSP must reject the request.
-  * For an "Agreed" RateType a requested exchange rate is populated in the ExchangeRate field, against the UnitCurrency. I.e, if the UnitCurrency is GBP and CurrencyOfTransfer is USD, then ExchangeRate will be 1.34 (USD to 1 GBP).
+  * For an "Agreed" RateType a requested exchange rate is populated in the ExchangeRate field, against the UnitCurrency. I.e, if the UnitCurrency is R$ and CurrencyOfTransfer is USD, then ExchangeRate will be 1.34 (USD to 1 R$).
   * For an "Agreed" RateType the exchange rate contract identifier is populated in the ContractIdentification field.
 * A PISP must not specify ExchangeRate and/or ContractIdentification when requesting an **Actual** RateType.
 * A PISP must not specify ExchangeRate and/or ContractIdentification when requesting an **Indicative** RateType.
@@ -174,7 +174,7 @@ The OBInternational2/ExchangeRateInformation object must conform to these behavi
 | Amount |1..1 |OBInternational2/InstructedAmount/Amount |A number of monetary units specified in an active currency where the unit of currency is explicit and compliant with ISO 4217. |OBActiveCurrencyAndAmount_SimpleType | |^\d{1,13}\.\d{1,5}$ |
 | Currency |1..1 |OBInternational2/InstructedAmount/Currency |A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 "Codes for the representation of currencies and funds". |ActiveOrHistoricCurrencyCode | |^[A-Z]{3,3}$ |
 | ExchangeRateInformation |0..1 |OBInternational2/ExchangeRateInformation |Provides details on the currency exchange rate and contract. |OBExchangeRate1 | | |
-| UnitCurrency |1..1 |OBInternational2/ExchangeRateInformation/UnitCurrency |Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP = xxxCUR, the unit currency is GBP. |ActiveOrHistoricCurrencyCode | |^[A-Z]{3,3}$ |
+| UnitCurrency |1..1 |OBInternational2/ExchangeRateInformation/UnitCurrency |Currency in which the rate of exchange is expressed in a currency exchange. In the example 1R$ = xxxCUR, the unit currency is R$. |ActiveOrHistoricCurrencyCode | |^[A-Z]{3,3}$ |
 | ExchangeRate |0..1 |OBInternational2/ExchangeRateInformation/ExchangeRate |The factor used for conversion of an amount from one currency to another. This reflects the price at which one currency was bought with another currency. |BaseOneRate | | |
 | RateType |1..1 |OBInternational2/ExchangeRateInformation/RateType |Specifies the type used to complete the currency exchange. |OBExchangeRateType2Code |Actual Agreed Indicative | |
 | ContractIdentification |0..1 |OBInternational2/ExchangeRateInformation/ContractIdentification |Unique and unambiguous reference to the foreign exchange contract agreed between the initiating party/creditor and the debtor agent. |Max256Text | | |
@@ -232,7 +232,7 @@ This section describes the OBExchangeRate2 class, which is used in the response 
 | Name |Occurrence |XPath |EnhancedDefinition |Class |Codes |Pattern |
 | ---- |---------- |----- |------------------ |----- |----- |------- |
 | OBExchangeRate2 | |OBExchangeRate2 |Further detailed information on the exchange rate that has been used in the payment transaction. |OBExchangeRate2 | | |
-| UnitCurrency |1..1 |OBExchangeRate2/UnitCurrency |Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP = xxxCUR, the unit currency is GBP. |ActiveOrHistoricCurrencyCode |^[A-Z]{3,3}$ | |
+| UnitCurrency |1..1 |OBExchangeRate2/UnitCurrency |Currency in which the rate of exchange is expressed in a currency exchange. In the example 1R$ = xxxCUR, the unit currency is R$. |ActiveOrHistoricCurrencyCode |^[A-Z]{3,3}$ | |
 | ExchangeRate |1..1 |OBExchangeRate2/ExchangeRate |The factor used for conversion of an amount from one currency to another. This reflects the price at which one currency was bought with another currency. |BaseOneRate | | |
 | RateType |1..1 |OBExchangeRate2/RateType |Specifies the type used to complete the currency exchange. |OBExchangeRateType2Code |Actual Agreed Indicative | |
 | ContractIdentification |0..1 |OBExchangeRate2/ContractIdentification |Unique and unambiguous reference to the foreign exchange contract agreed between the initiating party/creditor and the debtor agent. |Max256Text | | |
@@ -387,7 +387,7 @@ Accept: application/json
    "CurrencyOfTransfer": "USD",
    "InstructedAmount": {
     "Amount": "165.88",
-    "Currency": "GBP"
+    "Currency": "R$"
    },
    "CreditorAccount": {
     "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -400,7 +400,7 @@ Accept: application/json
     "Unstructured": "Internal ops code 5120101"
    },
    "ExchangeRateInformation": {
-    "UnitCurrency": "GBP",
+    "UnitCurrency": "R$",
     "RateType": "Actual"
    }
   }
@@ -435,7 +435,7 @@ Content-Type: application/json
    "CurrencyOfTransfer": "USD",
    "InstructedAmount": {
     "Amount": "165.88",
-    "Currency": "GBP"
+    "Currency": "R$"
    },
    "CreditorAccount": {
     "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -448,12 +448,12 @@ Content-Type: application/json
     "Unstructured": "Internal ops code 5120101"
    },
    "ExchangeRateInformation": {
-    "UnitCurrency": "GBP",
+    "UnitCurrency": "R$",
     "RateType": "Actual"
    }
   },
   "ExchangeRateInformation": {
-   "UnitCurrency": "GBP",
+   "UnitCurrency": "R$",
    "ExchangeRate": 1.1,
    "RateType": "Actual",
    "ExpirationDateTime": "2017-06-05T15:45:13+00:00"

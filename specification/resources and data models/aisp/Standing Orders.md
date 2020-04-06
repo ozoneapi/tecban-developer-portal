@@ -162,17 +162,17 @@ Content-Type: application/json
         "FirstPaymentDateTime": "2017-08-12T00:00:00+00:00",
         "FirstPaymentAmount": {
           "Amount": "0.57",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "NextPaymentDateTime": "2017-08-13T00:00:00+00:00",
         "NextPaymentAmount": {
           "Amount": "0.56",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "FinalPaymentDateTime": "2027-08-12T00:00:00+00:00",
         "FinalPaymentAmount": {
           "Amount": "0.56",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "StandingOrderStatusCode": "Active",
         "CreditorAccount": {
@@ -225,17 +225,17 @@ Content-Type: application/json
         "FirstPaymentDateTime": "2017-08-12T00:00:00+00:00",
         "FirstPaymentAmount": {
           "Amount": "0.57",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "NextPaymentDateTime": "2017-08-13T00:00:00+00:00",
         "NextPaymentAmount": {
           "Amount": "0.56",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "FinalPaymentDateTime": "2027-08-12T00:00:00+00:00",
         "FinalPaymentAmount": {
           "Amount": "0.56",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "StandingOrderStatusCode": "Active",
         "CreditorAccount": {
@@ -252,17 +252,17 @@ Content-Type: application/json
         "FirstPaymentDateTime": "2017-06-12T00:00:00+00:00",
         "FirstPaymentAmount": {
           "Amount": "23.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "NextPaymentDateTime": "2017-07-12T00:00:00+00:00",
         "NextPaymentAmount": {
           "Amount": "23.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "FinalPaymentDateTime": "2018-06-12T00:00:00+00:00",
         "FinalPaymentAmount": {
           "Amount": "23.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "StandingOrderStatusCode": "Active",
         "CreditorAccount": {

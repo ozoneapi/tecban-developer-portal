@@ -128,7 +128,7 @@ In the case that a PISP sets up a payment-order consent with a larger field size
 | Name |XPath |Occurrence |Class |MT103 Field |Field Name |Mandatory |Size |
 | --- |--- |--- |--- |--- |--- |--- |--- |
 | Amount |Initiation/InstructedAmount/Amount |1..1 |TotalDigits: 18, FractionDigits: 5 |32A |Value Date / Currency / Interbank Settled Amount |M |**15n** |
-| Currency |Initiation/InstructedAmount/Currency |1..1 |ActiveOrHistoricCurrencyCode "GBP" |32A |Value Date / Currency / Interbank Settled Amount |M |3x |
+| Currency |Initiation/InstructedAmount/Currency |1..1 |ActiveOrHistoricCurrencyCode "R$" |32A |Value Date / Currency / Interbank Settled Amount |M |3x |
 | Identification |Initiation/DebtorAccount/Identification |1..1 |Max256Text |50K |Ordering Customer |M |**34x** |
 | Identification |Initiation/CreditorAccount/Identification |1..1 |Max256Text |57 <br><br>59 |Account With Institution <br><br>Beneficiary Customer |M <br><br>M |**6n** <br><br>**8n** |
 | Name |Initiation/CreditorAccount/Name |1..1 |Max70Text |59 |Beneficiary Customer |M |**35x** |

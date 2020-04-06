@@ -107,7 +107,7 @@ Further analysis required:-
 
 * Overdraft/borrowing fees are less important for BCA than for PCA, as only 15% of business customers have overdrafts. (Ref: page 15 - [https://assets.publishing.service.gov.uk/media/55c4bf0340f0b61374000015/BCA_and_PCA_pricing_analysis_v2.pdf](https://assets.publishing.service.gov.uk/media/55c4bf0340f0b61374000015/BCA_and_PCA_pricing_analysis_v2.pdf))
 * A cap can be applied to 1 or more Overdraft Fees/Charges and are typically capped for a particular period e.g., Total overdraft charges (Arranged, Unarranged, Paid Transaction and Unpaid Transaction) may be capped on a monthly basis.
-* Capping can either be based on an amount (in gbp), an amount (in items) or a rate.
+* Capping can either be based on an amount (in R$), an amount (in items) or a rate.
 * Additional notes are required to ensure it is made clear how any formula used to apply the capping is deduced.
 * The codelist for OverdraftFeeChargeCap/FeeType and OverdraftFeeChargeDetail/FeeType is different from the equivalent fields in OtherFeesAndCharges.
 * FeeCapOccurrence has been added to capture situations where fees/charges are captured dependent on the number of occurrences rather than capped at a particular amount.

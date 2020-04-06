@@ -280,7 +280,7 @@ Accept: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.20",
       "InstructedAmount": {
         "Amount": "165.88",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "CreditorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -338,7 +338,7 @@ Content-Type: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.20",
       "InstructedAmount": {
         "Amount": "165.88",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "CreditorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -393,7 +393,7 @@ Content-Type: application/json
       "EndToEndIdentification": "FRESCO.21302.GFX.20",
       "InstructedAmount": {
         "Amount": "165.88",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "CreditorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",

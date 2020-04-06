@@ -128,7 +128,7 @@ Content-Type: application/json
         "Description": "Credit limit increase for the account up to £10000.00",
         "Amount": {
           "Amount": "10000.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         }
       },
       {
@@ -138,7 +138,7 @@ Content-Type: application/json
         "Description": "Balance transfer offer up to £2000",
         "Amount": {
           "Amount": "2000.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         }
       }      
     ]
@@ -184,7 +184,7 @@ Content-Type: application/json
         "Description": "Credit limit increase for the account up to £10000.00",
         "Amount": {
           "Amount": "10000.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         }
       },
       {
@@ -194,7 +194,7 @@ Content-Type: application/json
         "Description": "Balance transfer offer up to £2000",
         "Amount": {
           "Amount": "2000.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         }
       },
       {
@@ -204,7 +204,7 @@ Content-Type: application/json
         "Description": "Credit limit increase for the account up to £50000.00",
         "Amount": {
           "Amount": "50000.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         }
       }   
     ]

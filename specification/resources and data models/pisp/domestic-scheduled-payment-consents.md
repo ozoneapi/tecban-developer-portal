@@ -266,7 +266,7 @@ Accept: application/json
       "RequestedExecutionDateTime": "2018-08-06T00:00:00+00:00",
       "InstructedAmount": {
         "Amount": "200.00",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -312,7 +312,7 @@ Content-Type: application/json
       "RequestedExecutionDateTime": "2018-08-06T00:00:00+00:00",
       "InstructedAmount": {
         "Amount": "200.00",
-        "Currency": "GBP"
+        "Currency": "R$"
       },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",

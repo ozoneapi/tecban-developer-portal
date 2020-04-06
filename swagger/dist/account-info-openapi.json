@@ -2139,7 +2139,7 @@
             "pattern": "^[A-Z]{3,3}$"
           },
           "UnitCurrency": {
-            "description": "Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP = xxxCUR, the unit currency is GBP.",
+            "description": "Currency in which the rate of exchange is expressed in a currency exchange. In the example 1R$ = xxxCUR, the unit currency is R$.",
             "type": "string",
             "pattern": "^[A-Z]{3,3}$"
           },
@@ -3955,7 +3955,7 @@
                                                 "type": "array",
                                                 "items": {
                                                   "type": "object",
-                                                  "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.",
+                                                  "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in R$), an amount (in items) or a rate.",
                                                   "required": [
                                                     "FeeType",
                                                     "MinMaxType"
@@ -4081,7 +4081,7 @@
                                                       "type": "array",
                                                       "items": {
                                                         "type": "object",
-                                                        "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.",
+                                                        "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in R$), an amount (in items) or a rate.",
                                                         "required": [
                                                           "FeeType",
                                                           "MinMaxType"
@@ -4191,7 +4191,7 @@
                                           "type": "array",
                                           "items": {
                                             "type": "object",
-                                            "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.",
+                                            "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in R$), an amount (in items) or a rate.",
                                             "required": [
                                               "FeeType",
                                               "MinMaxType"
@@ -4317,7 +4317,7 @@
                                                 "type": "array",
                                                 "items": {
                                                   "type": "object",
-                                                  "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.",
+                                                  "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in R$), an amount (in items) or a rate.",
                                                   "required": [
                                                     "FeeType",
                                                     "MinMaxType"
@@ -5990,11 +5990,11 @@
                                             "type": "object",
                                             "properties": {
                                               "OverdraftFeeChargeCap": {
-                                                "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.",
+                                                "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in R$), an amount (in items) or a rate.",
                                                 "type": "array",
                                                 "title": "OverdraftFeeChargeCap",
                                                 "items": {
-                                                  "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.",
+                                                  "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in R$), an amount (in items) or a rate.",
                                                   "type": "object",
                                                   "properties": {
                                                     "FeeType": {
@@ -6242,11 +6242,11 @@
                                                       }
                                                     },
                                                     "OverdraftFeeChargeCap": {
-                                                      "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.",
+                                                      "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in R$), an amount (in items) or a rate.",
                                                       "type": "array",
                                                       "title": "OverdraftFeeChargeCap",
                                                       "items": {
-                                                        "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.",
+                                                        "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in R$), an amount (in items) or a rate.",
                                                         "type": "object",
                                                         "properties": {
                                                           "FeeType": {
@@ -6533,11 +6533,11 @@
                                       "type": "object",
                                       "properties": {
                                         "OverdraftFeeChargeCap": {
-                                          "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.",
+                                          "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in R$), an amount (in items) or a rate.",
                                           "type": "array",
                                           "title": "OverdraftFeeChargeCap",
                                           "items": {
-                                            "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.",
+                                            "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in R$), an amount (in items) or a rate.",
                                             "type": "object",
                                             "properties": {
                                               "FeeType": {
@@ -6785,11 +6785,11 @@
                                                 }
                                               },
                                               "OverdraftFeeChargeCap": {
-                                                "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.",
+                                                "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in R$), an amount (in items) or a rate.",
                                                 "type": "array",
                                                 "title": "OverdraftFeeChargeCap",
                                                 "items": {
-                                                  "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.",
+                                                  "description": "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in R$), an amount (in items) or a rate.",
                                                   "type": "object",
                                                   "properties": {
                                                     "FeeType": {

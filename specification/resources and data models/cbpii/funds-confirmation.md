@@ -127,7 +127,7 @@ x-fapi-interaction-id: hook5i13-ntIg-4th3-rP41-3ro535touch3
 	"Reference": "Purchase01",
     "InstructedAmount": {
        "Amount": "20.00",
-       "Currency": "GBP"
+       "Currency": "R$"
     }
   }
 }
@@ -153,7 +153,7 @@ x-fapi-interaction-id: hook5i13-ntIg-4th3-rP41-3ro535touch3
 	"Reference": "Purchase01",
     "InstructedAmount": {
        "Amount": "20.00",
-       "Currency": "GBP"
+       "Currency": "R$"
     }
   },
   "Links": {
@@ -165,7 +165,7 @@ x-fapi-interaction-id: hook5i13-ntIg-4th3-rP41-3ro535touch3
 
 #### Example with a USD account
 
-A funds confirmation check can be made in a currency other than GBP as long as the InstructedAmount is in the currency of the payment account.
+A funds confirmation check can be made in a currency other than R$ as long as the InstructedAmount is in the currency of the payment account.
 
 In this example, a USD funds check is made on a USD payment account.
 

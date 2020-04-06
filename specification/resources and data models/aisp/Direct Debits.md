@@ -108,7 +108,7 @@ Content-Type: application/json
         "PreviousPaymentDateTime": "2017-04-05T10:43:07+00:00",
         "PreviousPaymentAmount": {
           "Amount": "0.57",
-          "Currency": "GBP"
+          "Currency": "R$"
         }
       }
     ]
@@ -156,7 +156,7 @@ Content-Type: application/json
         "PreviousPaymentDateTime": "2017-04-05T10:43:07+00:00",
         "PreviousPaymentAmount": {
           "Amount": "0.57",
-          "Currency": "GBP"
+          "Currency": "R$"
         }
       },
       {
@@ -168,7 +168,7 @@ Content-Type: application/json
         "PreviousPaymentDateTime": "2017-05-06T09:00:00+00:00",
         "PreviousPaymentAmount": {
           "Amount": "22.30",
-          "Currency": "GBP"
+          "Currency": "R$"
         }
       }
     ]

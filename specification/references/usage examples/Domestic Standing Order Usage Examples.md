@@ -98,16 +98,16 @@ Accept: application/json
 	  "FirstPaymentDateTime": "1976-06-06T06:06:06+00:00",
 	  "FirstPaymentAmount": {
         "Amount": "6.66",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
 	  "RecurringPaymentAmount": {
         "Amount": "7.00",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
 	  "FinalPaymentDateTime": "1981-03-20T06:06:06+00:00",
 	  "FinalPaymentAmount": {
         "Amount": "7.00",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -150,16 +150,16 @@ Content-Type: application/json
 	  "FirstPaymentDateTime": "1976-06-06T06:06:06+00:00",
 	  "FirstPaymentAmount": {
         "Amount": "6.66",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
 	  "RecurringPaymentAmount": {
         "Amount": "7.00",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
 	  "FinalPaymentDateTime": "1981-03-20T06:06:06+00:00",
 	  "FinalPaymentAmount": {
         "Amount": "7.00",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -209,16 +209,16 @@ Accept: application/json
 	  "FirstPaymentDateTime": "1976-06-06T06:06:06+00:00",
 	  "FirstPaymentAmount": {
         "Amount": "6.66",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
 	  "RecurringPaymentAmount": {
         "Amount": "7.00",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
 	  "FinalPaymentDateTime": "1981-03-20T06:06:06+00:00",
 	  "FinalPaymentAmount": {
         "Amount": "7.00",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -262,16 +262,16 @@ Content-Type: application/json
 	  "FirstPaymentDateTime": "1976-06-06T06:06:06+00:00",
 	  "FirstPaymentAmount": {
         "Amount": "6.66",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
 	  "RecurringPaymentAmount": {
         "Amount": "7.00",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
 	  "FinalPaymentDateTime": "1981-03-20T06:06:06+00:00",
 	  "FinalPaymentAmount": {
         "Amount": "7.00",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",
@@ -330,16 +330,16 @@ Content-Type: application/json
 	  "FirstPaymentDateTime": "1976-06-06T06:06:06+00:00",
 	  "FirstPaymentAmount": {
         "Amount": "6.66",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
 	  "RecurringPaymentAmount": {
         "Amount": "7.00",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
 	  "FinalPaymentDateTime": "1981-03-20T06:06:06+00:00",
 	  "FinalPaymentAmount": {
         "Amount": "7.00",
-        "Currency": "GBP"
+        "Currency": "R$"
 	  },
       "DebtorAccount": {
         "SchemeName": "UK.OBIE.SortCodeAccountNumber",

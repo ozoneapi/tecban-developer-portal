@@ -158,7 +158,7 @@ If the ReadPAN permission is granted by the PSU - the ASPSP may choose to popula
 | CurrencyExchange |0..1 |OBReadTransaction5/Data/Transaction/CurrencyExchange |Set of elements used to provide details on the currency exchange. |OBCurrencyExchange5 | | |
 | SourceCurrency |1..1 |OBReadTransaction5/Data/Transaction/CurrencyExchange/SourceCurrency |Currency from which an amount is to be converted in a currency conversion. |ActiveOrHistoricCurrencyCode | |^[A-Z]{3,3}$ |
 | TargetCurrency |0..1 |OBReadTransaction5/Data/Transaction/CurrencyExchange/TargetCurrency |Currency into which an amount is to be converted in a currency conversion. |ActiveOrHistoricCurrencyCode | |^[A-Z]{3,3}$ |
-| UnitCurrency |0..1 |OBReadTransaction5/Data/Transaction/CurrencyExchange/UnitCurrency |Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP = xxxCUR, the unit currency is GBP. |ActiveOrHistoricCurrencyCode | |^[A-Z]{3,3}$ |
+| UnitCurrency |0..1 |OBReadTransaction5/Data/Transaction/CurrencyExchange/UnitCurrency |Currency in which the rate of exchange is expressed in a currency exchange. In the example 1R$ = xxxCUR, the unit currency is R$. |ActiveOrHistoricCurrencyCode | |^[A-Z]{3,3}$ |
 | ExchangeRate |1..1 |OBReadTransaction5/Data/Transaction/CurrencyExchange/ExchangeRate |Factor used to convert an amount from one currency into another. This reflects the price at which one currency was bought with another currency. Usage: ExchangeRate expresses the ratio between UnitCurrency and QuotedCurrency (ExchangeRate = UnitCurrency/QuotedCurrency). |BaseOneRate | | |
 | ContractIdentification |0..1 |OBReadTransaction5/Data/Transaction/CurrencyExchange/ContractIdentification |Unique identification to unambiguously identify the foreign exchange contract. |Max35Text | | |
 | QuotationDate |0..1 |OBReadTransaction5/Data/Transaction/CurrencyExchange/QuotationDate |Date and time at which an exchange rate is quoted. |ISODateTime | | |
@@ -260,7 +260,7 @@ Content-Type: application/json
         "TransactionReference": "Ref 1",
         "Amount": {
           "Amount": "10.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditDebitIndicator": "Credit",
         "Status": "Booked",
@@ -278,7 +278,7 @@ Content-Type: application/json
         "Balance": {
           "Amount": {
             "Amount": "230.00",
-            "Currency": "GBP"
+            "Currency": "R$"
           },
           "CreditDebitIndicator": "Credit",
           "Type": "InterimBooked"
@@ -330,7 +330,7 @@ Content-Type: application/json
         "TransactionReference": "Ref 123",
         "Amount": {
           "Amount": "10.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditDebitIndicator": "Credit",
         "Status": "Booked",
@@ -348,7 +348,7 @@ Content-Type: application/json
         "Balance": {
           "Amount": {
             "Amount": "230.00",
-            "Currency": "GBP"
+            "Currency": "R$"
           },
           "CreditDebitIndicator": "Credit",
           "Type": "InterimBooked"
@@ -360,7 +360,7 @@ Content-Type: application/json
         "TransactionReference": "Ref 124",
         "Amount": {
           "Amount": "100.00",
-          "Currency": "GBP"
+          "Currency": "R$"
         },
         "CreditDebitIndicator": "Debit",
         "Status": "Booked",
@@ -379,7 +379,7 @@ Content-Type: application/json
         "Balance": {
           "Amount": {
             "Amount": "57.36",
-            "Currency": "GBP"
+            "Currency": "R$"
           },
           "CreditDebitIndicator": "Debit",
           "Type": "InterimBooked"
