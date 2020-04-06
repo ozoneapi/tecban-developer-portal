@@ -1,6 +1,6 @@
 # Bank 1
 
-| | Client ID | Client Secret | Environment File|
+| Team | Client ID | Client Secret | Environment File|
 | ------------- | ------------- | ------------- | ------------- |
 | 1 |`55b2fa9d-d89d-4f2d-8e52-08432a39c379`  |`3213ecfc-8306-4b89-a5b8-0c4eefb8df3a` |[Client-1-Bank-1.json](./environment/Client-1%20Bank-1.json)
 | 2 |`494a1dce-402a-44cc-a59d-d96b879143e2`  |`2ca861d7-7ef0-4742-9226-6f69aa3ff62c` |[Client-2-Bank-1.json](./environment/Client-2%20Bank-1.json)
@@ -25,7 +25,7 @@
 
 # Bank 2
 
-| | Client ID | Client Secret | |
+| Team | Client ID | Client Secret | |
 | ------------- | ------------- | ------------- | ------------- |
 | 1 |`be497bce-9108-46e8-9a39-15e4fb6d6d93`  |`af48b7f2-69e5-42df-a8e8-558a2610a942` |[Client-1-Bank-2.json](./environment/Client-1%20Bank-2.json)
 | 2 |`c4422cd6-7a0a-48cf-81f3-3c3a672bb3db`  |`d2a72f9a-dc94-4544-a682-6bc9188ee5b3` |[Client-2-Bank-2.json](./environment/Client-2%20Bank-2.json)
