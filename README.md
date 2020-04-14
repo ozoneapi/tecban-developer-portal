@@ -79,11 +79,27 @@ Below are the paths of our well-known endpoints for the Sandbox environments.
   - Authorisation Server 1: Provides both strict and permissive client profiles in headless and non headless options.
     - OIDC Well Known endpoint: https://ob-issuer1.tecban-sandbox.o3bank.co.uk/.well-known/openid-configuration 
     - `baseUrl`: https://ob-api1.tecban-sandbox.o3bank.co.uk:4501/v1.0 
-    - [Security Profiles](specification/images/sandbox-auth-server-1-profiles.png) 
+    
+    ##### Authorisation Server 1: Security Profiles
+    
+    | Profile Name | idTokenSigningAlgs | tokenEndPointAuthenticationMethods | Response Types | requestObjectSigningAlgs | tokenEndPointAuthSigningAlgs | autoLogin |
+    | --- | --- | --- | --- | --- | --- | --- |
+    | TechBan Sandbox 1 - Strict, UI |PS256 |private_key_jwt tls_client_auth|code id_token |PS256 |PS256 |false |
+    | TechBan Sandbox 1 - Strict, Headless |PS256 |private_key_jwt tls_client_auth|code id_token |PS256 |PS256 |true |
+    | TechBan Sandbox 1 - Permissive, Headless |PS256 |client_secret_basic client_secret_jwt private_key_jwt tls_client_auth |code code id_token |none HS256 RS256 PS256 |none HS256 RS256 PS256 | true |
+    | TechBan Sandbox 1 - Permissive, UI |PS256 |client_secret_basic client_secret_jwt private_key_jwt tls_client_auth |code code id_token |none HS256 RS256 PS256 |none HS256 RS256 PS256 |false |
+
   - Authorisation Server 2: Provides a more permissive security profile is used to help TPP onboarding and learning
     - OIDC Well Known endpoint: https://ob-issuer2.tecban-sandbox.o3bank.co.uk/.well-known/openid-configuration 
     - `baseUrl`: https://ob-api2.tecban-sandbox.o3bank.co.uk:4502/v1.0 
-    - [Security Profiles](specification/images/sandbox-auth-server-2-profiles.png) 
+
+    ##### Authorisation Server 2 Security Profiles
+
+    | Profile Name | idTokenSigningAlgs | tokenEndPointAuthenticationMethods | Response Types | requestObjectSigningAlgs | tokenEndPointAuthSigningAlgs | autoLogin |
+    | --- | --- | --- | --- | --- | --- | --- |
+    |TechBan 2 - Standard | |client_secret_basic|code id_token |PS256 |PS256 |false |
+    |TechBan 2 - Headless | |client_secret_basic|code id_token |PS256 |PS256 |true |
+
 
 ### Sandbox Testing Info
 
