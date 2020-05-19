@@ -59,6 +59,8 @@ Please see our [Step-by-step guide to using Postman](TBC).
 | mits   | mits     |
 | ivsa   | ivsa     |
 
+### Swagger
+You can download swagger specifications for the TecBan open banking API from [here](https://github.com/OpenBankingUK/read-write-api-specs/tree/v3.1.5).
 
 ## Support
 
