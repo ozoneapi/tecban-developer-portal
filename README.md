@@ -1,3 +1,5 @@
+![Tecban](/images/logo.png)
+
 # TecBan open banking API
 
 Welcome to the TecBan open banking API developer portal.
@@ -7,7 +9,7 @@ Welcome to the TecBan open banking API developer portal.
 
   - [Introduction](#introduction)
   - [API specifications](#api-specifications)
-  - [Sandbox API](#sandbox-api)
+  - [Sandbox](#sandbox)
   - [Support](#support)
 
 
@@ -28,11 +30,9 @@ Please see the following specifications which are supported:
     - This specification describes the resources that are available in our APIs
     
     
-## Sandbox API
+## Sandbox
 
-Our API Sandbox contains a full simulation of the TecBan APIs but without connecting to any real customer accounts.
-
-Below are the paths of our well-known endpoints for the Sandbox environments.
+Our API Sandbox contains a full simulation of the TecBan API but without connecting to any real customer accounts. Below are the paths of our well-known endpoints for the Sandbox environments:
 
   - Authorisation Server 1: Provides both strict and permissive client profiles in headless and non headless options.
     - OIDC Well Known endpoint: https://ob-issuer1.tecban-sandbox.o3bank.co.uk/.well-known/openid-configuration
@@ -44,6 +44,12 @@ Below are the paths of our well-known endpoints for the Sandbox environments.
 ### Certificate support
 
 The TecBan API requires both 'Transport' and 'Signing' Certificates. For the Sandbox API, please contact TecBan (see below).
+
+### Postman collection
+
+The best way to test out our API is to use our [Postman collections](TBC).
+
+Please see our [Step-by-step guide to using Postman](TBC). 
 
 ### Sandbox user accounts for testing
 
@@ -58,3 +64,7 @@ The TecBan API requires both 'Transport' and 'Signing' Certificates. For the San
 
 If you have any questions or issues, please raise an issue via the following channel: [openbanking.support@tecban.com.br](mailto:openbanking.support@tecban.com.br)
 
+
+Powered by:
+
+![Ozone API](/images/logo.png)
