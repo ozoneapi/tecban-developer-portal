@@ -49,7 +49,7 @@ The TecBan API requires both 'Transport' and 'Signing' Certificates. For the San
 
 The best way to test out our API is to use our [Postman collections](TBC).
 
-Please see our [step-by-step guide to using Postman](TBC). 
+Please see our [step-by-step guide to using Postman](./guides/postman-step-by-step.md). 
 
 ### Sandbox user accounts for testing
 
