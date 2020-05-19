@@ -1,4 +1,4 @@
-![Tecban](/images/logo.png)
+![TecBan](https://bitbucket.org/ozoneapi/tecban-developer-portal/downloads/tecban-logo-300px.png)
 
 # TecBan open banking API
 
@@ -26,7 +26,7 @@ Please see the following specifications which are supported:
 
   - [Open ID Foundation's Financial Grade API (FAPI) Profile](https://openid.net/specs/openid-financial-api-part-2-wd-06.html)
     - This specification enables user authentication of consents for open banking
-  - [TecBan open banking API specification](https://openbankinguk.github.io/read-write-api-site3/) - based on the UK open banking read/write API specification v3.1
+  - [UK Open Banking (OBIE) read/write API specification v3.1](https://openbankinguk.github.io/read-write-api-site3/)
     - This specification describes the resources that are available in our APIs
     
     
@@ -49,7 +49,7 @@ The TecBan API requires both 'Transport' and 'Signing' Certificates. For the San
 
 The best way to test out our API is to use our [Postman collections](TBC).
 
-Please see our [Step-by-step guide to using Postman](TBC). 
+Please see our [step-by-step guide to using Postman](TBC). 
 
 ### Sandbox user accounts for testing
 
@@ -66,7 +66,8 @@ You can download swagger specifications for the TecBan open banking API from [he
 
 If you have any questions or issues, please raise an issue via the following channel: [openbanking.support@tecban.com.br](mailto:openbanking.support@tecban.com.br)
 
+---
 
 Powered by:
 
-![Ozone API](/images/logo.png)
+![Ozone API](https://bitbucket.org/ozoneapi/tecban-developer-portal/downloads/ozoneapi-logo-300px.png)
