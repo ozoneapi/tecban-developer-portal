@@ -1,4 +1,4 @@
-![Tecban](/images/logo.png)
+![TecBan](/images/tecban-logo-300px.png)
 
 # TecBan open banking API
 
@@ -43,13 +43,13 @@ Our API Sandbox contains a full simulation of the TecBan API but without connect
 
 ### Certificate support
 
-The TecBan API requires both 'Transport' and 'Signing' Certificates. For the Sandbox API, please contact TecBan (see below).
+The TecBan API requires both 'transport' and 'signing' certificates. To obtain these certificates to access the Sandbox API, please contact TecBan (see below).
 
 ### Postman collection
 
 The best way to test out our API is to use our [Postman collections](TBC).
 
-Please see our [Step-by-step guide to using Postman](TBC). 
+Please see our [step-by-step guide to using Postman](TBC). 
 
 ### Sandbox user accounts for testing
 
@@ -67,4 +67,4 @@ If you have any questions or issues, please raise an issue via the following cha
 
 Powered by:
 
-![Ozone API](/images/logo.png)
+![Ozone API](/images/ozone-logo-300px.png)
