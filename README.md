@@ -1,4 +1,4 @@
-![Tecban](/images/logo.png)
+![TecBan](/downloads/tecban-logo-300px.png)
 
 # TecBan open banking API
 
@@ -69,4 +69,4 @@ If you have any questions or issues, please raise an issue via the following cha
 
 Powered by:
 
-![Ozone API](/images/logo.png)
+![Ozone API](/downloads/ozoneapi-logo-300px.png)
